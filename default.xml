@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
-   <remote name="th"
-           fetch="git://github.com/teamhorizon/" /> 
-  <default revision="refs/tags/android-4.1.1_r3"
-           remote="aosp"
-           sync-j="4" />
+    <remote  name="aosp"
+    fetch="https://android.googlesource.com/" />
+    <remote name="th"
+    fetch="git://github.com/teamhorizon/" />
+    <default revision="refs/tags/android-4.1.1_r3"
+    remote="aosp"
+    sync-j="4" />
 
   <project path="build" name="android_build" remote="th" revision="jellybean"> >
     <copyfile src="core/root.mk" dest="Makefile" />
